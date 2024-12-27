@@ -1,0 +1,7 @@
+streamlit
+plotly
+pandas
+skicit-learn
+os-sys
+ucimlrepo
+ydata-profiling
