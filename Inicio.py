@@ -22,7 +22,7 @@ with col1:
 
 with col2:
     st.subheader("Analisis exploratorio de datos")
-    st.markdown("Explora los datos y descubre patrones.")
+    st.markdown("Explora los datos y explora interesantes curiosidades del mundo de los videojuegos.")
 
 col3, col4 = st.columns([2, 2])
 
@@ -33,7 +33,7 @@ with col3:
 
 with col4:
     st.subheader("Hipótesis: Visualización de hipótesis propuestas")
-    st.markdown("Evalúa diferentes hipótesis mediante gráficos interactivos.")
+    st.markdown("Evalúa diferentes hipótesis mediante gráficos que facilitan la interpretacion de los datos.")
 
 col5, col6 = st.columns([2, 2])
 
