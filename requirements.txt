@@ -2,9 +2,7 @@ streamlit
 plotly
 pandas
 scikit-learn
-os-sys
 ucimlrepo
 ydata-profiling
 seaborn
-matplotlib.pyplot
-transformers
+matplotlib
