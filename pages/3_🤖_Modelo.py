@@ -89,6 +89,14 @@ try:
         platforms = filtered_data.groupby("Platform")["Global_Sales"].sum().sort_values(ascending=False)
         return platforms.head(3).index.tolist()
 
+    # Sugerir plataformas
+    st.title("Sugerir Plataformas")
+    example_genre = st.selectbox("Selecciona un género", data["Genre"].unique())
+    example_year = st.slider("Selecciona un año", int(data["Year"].min()), 2030)  # Extensión hasta 2030
+    suggested_platforms = suggest_platforms(example_genre, example_year)
+
+    st.write(f"Las 3 plataformas más adecuadas para el género '{example_genre}' en el año {example_year} son: {suggested_platforms}")
+
     # Realizar Predicciones Automáticamente con los primeros datos de muestra
     st.title("Realizar Predicciones Automáticas")
     example_data = {
